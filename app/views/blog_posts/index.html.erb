@@ -11,3 +11,9 @@
     <%= blog_post.content %>
   <% end %>
 </div>
+
+<% if @pagy.count > @pagy.items %>
+  <div class="my-12">
+    <%== pagy_nav(@pagy) %>
+  </div>
+<% end %>
